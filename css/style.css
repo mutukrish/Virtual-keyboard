@@ -1,0 +1,324 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f8f8f8;
+}
+
+.kB {
+	z-index: 20;
+	margin: 0 auto 20px;
+	width: 800px;
+	height: 340px;
+	background: #bbb;
+	background: -moz-linear-gradient(top, #A8A8A8 0%, #E0E0E0 5%, #EFEFEF 7%, #D8D8D8 15%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A8A8A8), color-stop(5%,#E0E0E0), color-stop(7%,#EFEFEF), color-stop(15%,#D8D8D8));
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8A8A8', endColorstr='#D8D8D8',GradientType=0 ); /* ie */
+	    -moz-border-radius-topleft: 7px 21px;
+	   -moz-border-radius-topright: 7px 21px;
+	-moz-border-radius-bottomright: 10px;
+	 -moz-border-radius-bottomleft: 10px;
+	        border-top-left-radius: 7px 21px;
+	       border-top-right-radius: 7px 21px;
+	    border-bottom-right-radius: 10px;
+	     border-bottom-left-radius: 10px;
+	padding: 50px 0 0;
+	-webkit-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+	   -moz-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+	        box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+}
+
+ul {
+	list-style-type: none;
+	width: 784px;
+	margin: 0 auto;
+}
+
+li {
+	float: left;
+}
+
+.key {
+	display: block;
+	color: #aaa;
+	font: bold 9pt arial;
+	text-decoration: none;
+	text-align: center;
+	width: 44px;
+	height: 41px;
+	margin: 5px;
+	background: #eff0f2;
+	-moz-border-radius: 4px;
+	     border-radius: 4px;
+	border-top: 1px solid #f5f5f5;
+	-webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	   -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	        box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	text-shadow: 0 1px 0 #f5f5f5;
+}
+
+.key:active, .keydown {
+	color: #888;
+	background: #ebeced;
+	margin: 7px 5px 3px;
+	-webkit-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	   -moz-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	        box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	border-top: 1px solid #eee;
+}
+
+.fn span {
+	display: block;
+	margin: 14px 5px 0 0;
+	text-align: right;
+	font: bold 6pt arial;
+	text-transform: uppercase;
+}
+
+.esc {
+	margin: 6px 15px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.nM li a span {
+	display: block;
+}
+
+.nM li a b {
+	margin: 3px 0;
+	display: block;
+}
+
+.nM li .alt b {
+	display: block;
+	margin: 0 0 3px;
+}
+
+.nM li .del span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.qW li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+.qW li .tab span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.qW  li .alt b {
+	display: block;
+	margin: 3px 0 0;
+}
+
+.qW li .alt span {
+	margin: 2px 0 0;
+}
+
+.alP li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+.alP li .alt span {
+	margin: 0;
+	text-transform: lowercase;
+}
+
+.alP li .alt b {
+	display: block;
+	margin: 3px 0 0;
+}
+
+.alP li #caps b {
+	display: block;
+	background: #999;
+	width: 4px;
+	height: 4px;
+	border-radius: 10px;
+	margin: 9px 0 0 10px;
+	-webkit-box-shadow: inset 0 1px 0 #666;
+	-moz-box-shadow: inset 0 1px 0 #666;
+	box-shadow: inset 0 1px 0 #666;
+}
+
+.alP li #caps.keydown b {
+	background: #c1ff00;
+	width: 4px;
+	height: 4px;
+	border-radius: 10px;
+	/* Green Light added by Cameron Little */
+	-webkit-box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+	   -moz-box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+	        box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+}
+
+.alP li .caps span {
+	text-align: left;
+	margin: 10px 0 0 10px;
+	font-size: 7.5pt;
+}
+
+.alP li .ent span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+}
+
+.alp_tw li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+.alp_tw li .sL span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.alp_tw li .sR span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.alp_tw li .alt b {
+	display: block;
+	margin: 4px 0 0;
+}
+
+.alp_tw li .alt span {
+	margin: 0;
+}
+
+.bR li .fn span, .bR li .cntrl span, .bR li .oL span, .bR li .cmdL span {
+	display: block;
+	text-align: left;
+	margin: 31px 0 0 8px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.bR li .oprR span, .bR li .cmdR span {
+	display: block;
+	text-align: right;
+	margin: 31px 8px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+.bR ol li .left span, .bR ol li .right span, .bR ol li .up span, .bR ol li .down span {
+	display: block;
+	margin: 4px 0 0;
+}
+
+.fn {
+	height: 26px;
+	width: 46px;
+}
+
+.del {
+	width: 72px;
+}
+
+.tab {
+	width: 72px;
+}
+
+.caps {
+	width: 85px;
+}
+
+.enter {
+	width: 85px;
+}
+
+.sL, .sR {
+	width: 112px;
+}
+
+.fn, .cntrl, .option, .cmd, .spb {
+	height: 49px;
+}
+
+.cntrl {
+	width: 56px;
+}
+
+.option {
+	width: 46px;
+}
+
+.cmd {
+	width: 67px;
+}
+
+.spb {
+	width: 226px;
+}
+
+.left img, .up img, .down img, .right img {
+	border: none;
+}
+
+ul ol {
+	list-style-type: none;
+}
+
+
+.up, .left, .right ,.down{
+	height: 24px;
+}
+
+.left, .right {
+	margin: 30px 5px 5px;
+	width: 40px;
+}
+
+.left:active, .right:active {
+	margin: 32px 5px 3px;
+}
+
+.up, .down {
+	margin: 5px 5px 1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.up:active {
+	margin: 8px 5px -2px;
+}
+
+
+.up:active {
+	margin: 3px 5px 4px;
+}
+
+.keyArea {
+	display: block;
+	width: 750px;
+	height: 200px;
+	background: #fff;
+	margin: 50px auto 0;
+	border: 1px solid #fff;
+	padding: 20px;
+	-webkit-box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+	   -moz-box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+	        box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+}
+
